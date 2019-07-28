@@ -1,9 +1,11 @@
 {
   "name": "module-practice",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "",
-  "main": "index.js",
+  "main": "dist/root.js",
+  "types": "dist/root.d.ts",
   "scripts": {
+    "build": "webpack --config=config/webpack/prod.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

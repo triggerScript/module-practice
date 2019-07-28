@@ -6,12 +6,14 @@ const context = path.join(rootPath, "src");
 const outputPath = path.join(rootPath, 'dist');
 
 const commonConfig: webpack.Configuration = {
-    target: 'node',
     context,
     entry: path.join(context, 'root.ts'),
     output: {
         filename: 'bundle.js',
         path: outputPath
+    },
+    resolve: {
+        extensions: ['.ts']
     },
     module: {
         rules: [
